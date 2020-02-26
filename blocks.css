@@ -1,0 +1,47 @@
+#header {
+    background-color:Green;
+    height: 60px;
+    text-align: center;
+    margin:0px;
+    font-style:arial, sans-serif;
+    text-align:center;
+}
+#menu {
+    float:right;
+    margin-top:25px;
+    background-color:orange;
+    height:300px;
+    width: 150px;
+}
+#main1 {
+    position:relative;
+    left:35px;
+    top:45px;
+    height:150px;
+    width:250px;
+    color:white;
+    font-style:italic;
+    
+}
+#main2 {
+    
+    position:absolute;
+    left:230px;
+    top:250px;
+    width:250px;
+    height:200px;
+}
+#main3 {
+    position:absolute;
+    top:400px;
+    left:450px;
+    height:100px;
+    width:400px;
+}
+p {
+    text-align:center;
+    color:white;
+}
+body {
+    background: url(images/sky.jpg);
+}
