@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="p1vl.css">               
+        <title>Web-технологии</title>    
+    </head>
+<body>
+<div class="container">
+<form action="/servlet" method="get" name="auth">
+    <div class="field loginname">
+        Имя <input type="text" name="name" size="20">
+    </div>
+    <div class="field pass">
+        Пароль <input type="password" width="15" name="pwd">
+    </div>
+    <div class="field support">
+        <input type="checkbox" name="sessia">Оставаться в системе
+    </div>
+    <div class="field button">
+        <input class="button"type="button" value="Авторизоваться">
+    </div>
+</form>
+</div>
+    <br>
+<div class="container height">
+    <form action="/servlet" method="get" name="Country">
+        <img  src="images/navi.jpg" width="150"  float="left" alt="NaVi">
+        <div id="field_country">
+            <p>Выберите страну:</p>
+            <select name="country">
+                <option id="Russia" value="Россия">
+                    <p>Россия</p>
+                </option> 
+                <option id="UA" value="Украина">
+                    <p>Украина</p>
+                </option>
+                <option id="USA" value="США">
+                    <p>США</p>
+                </option>
+            </select>
+        </div>
+        <div class="field" id="fbutton">
+            <input class="button" id="sbut" type="button" value="Сохранить">
+        </div>
+    </form>
+</div>
+<script>
+    var arr =[]
+</script>
+        
+    
+    
+</body>    
+</html>

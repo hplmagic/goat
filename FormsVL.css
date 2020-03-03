@@ -1,0 +1,69 @@
+body {
+    background: url(images/sky.jpg);
+}
+
+img {
+    float:left;
+    margin: 40px 20px;
+}
+
+.field {
+    margin:20px auto;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 90%;
+    right:20px;
+}
+
+.container{
+    margin: 20px;
+    background-color:lightcyan;
+    width: 400px;
+    height:155px;
+}
+.height{
+    margin: 20px;
+    background-color:lightcyan;
+    width: 400px;
+    height:220px;
+}
+#form_name {
+    
+    margin-left:20px;
+    margin-top:20px;
+    width:250px;
+}
+
+#button {
+    float:right;
+}
+
+#field_country {
+    float:right;
+    margin-top:30px;
+    margin-right: 10px;
+}
+#Russia {
+    color:red;
+    font-style:italic;
+}
+#UA {
+    color:goldenrod;
+    font-style:italic;
+}
+#USA {
+    color:saddlebrown;
+    font-style:italic;
+}
+
+#fbutton {
+    width:70%;
+}
+#sbut {
+    float:right;
+    margin-right:15px;
+    margin-top:20px;
+    width:50%;
+}
+
