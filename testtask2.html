@@ -60,25 +60,6 @@
         return document.body.replaceChild(newTable, firstTable);
       }
     }
-
-    function destroyTable() {
-      var body = document.querySelector("body"),
-          table = document.querySelector("table"),
-          checkbox = document.getElementById("checkbox")
-          tableWidth = document.getElementById("table-width"),
-          tableHeight = document.getElementById("table-height"),
-          numRows = document.getElementById("rows"),
-          numColumns = document.getElementById("columns");
-      if (document.querySelector("table") != null) {
-      document.body.removeChild(table);
-      checkbox.checked = false;
-      tableWidth.value = "";
-      tableHeight.value = "";
-      numRows.value = "";
-      numColumns.value = "";
-      }
-    }
-
 </script>
 </body>
 </html>
