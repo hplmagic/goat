@@ -1,0 +1,32 @@
+function randomNumber(min, max) {
+var rand = min + Math.random() * (max + 1 - min);
+return Math.floor(rand);
+}
+
+function CreateTable(str, stb) {    //функция создания таблицы 
+var table = document.createElement("table")
+    for (var i = 0; i < str; i++) {
+        var stroka = document.createElement("tr")
+        for (var j = 0; j < stb; j++) {
+            var stolb = document.createElement("td")
+            stroka.appendChild(stolb)
+            var forma = document.createElement("form")
+            stolb.appendChild(forma)
+            var text = document.createElement("textarea")  
+            text.rows = 5
+            text.cols = 10
+            forma.appendChild(text)
+            forma.appendChild(document.createElement("br"))
+            var sohr = document.createElement("input")
+            sohr.type = "submit"
+            sohr.value = "Сохранить"
+            forma.appendChild(sohr)
+            forma.onsubmit = function (e) {
+                e.target.parentNode.innerText = e.target.elements[0].value
+                return false
+            }
+        }
+        table.appendChild(stroka)
+    }
+    document.body.appendChild(table)
+}
