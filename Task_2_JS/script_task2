@@ -29,4 +29,56 @@ var table = document.createElement("table")
         table.appendChild(stroka)
     }
     document.body.appendChild(table)
-}
+}function CreateBlocks() {   //функция создания блока с кол-вом столбцов и строк
+var functions = document.createElement("div")
+    functions.classList.add("functions")
+    functions.classList.add("hide")  //класс на скрытие
+    div0.appendChild(functions)
+
+var div1 = document.createElement("div") //первая
+    functions.appendChild(div1)
+var p1 = document.createElement("p")
+    p1.innerHTML = "Изменить границы таблицы"
+    div1.appendChild(p1)
+
+var shirina = document.createElement("input")
+    shirina.type = "text"
+    shirina.maxLength = 3
+    shirina.oninput = function () { but1.innerText = "Поменять ширину на " + shirina.value + " px" + " и стиль рамки " + variant.value }
+    div1.appendChild(shirina)
+
+    const border = ["none", "dotted", "dashed", "solid", "double", "groove", "ridge", "inset", "outset"]
+var variant = document.createElement("select")
+    div1.appendChild(variant)
+    for (var i = 0; i < border.length; i++) {
+        var opt = document.createElement("option")
+        opt.innerText = border[i]
+        variant.appendChild(opt)
+        variant.onchange = function () { but1.innerText = "Применить " + shirina.value + " px" + " и рамка " + variant.value }
+    }
+
+var but1 = document.createElement("button")
+    but1.innerText = "Применить"
+    but1.onclick = function () {
+        var text = but1.parentNode.querySelector("input").value
+        var borderStyle = but1.parentNode.querySelector("select").value
+        document.querySelector("table").style.borderStyle = borderStyle
+        document.querySelector("table").style.width = text + "px"
+    }
+    div1.appendChild(but1)
+
+
+var div2 = document.createElement("div") //вторая кнопка
+    functions.appendChild(div2)
+var p2 = document.createElement("p")
+    p2.innerText = "Добавить заголовок"
+    div2.appendChild(p2)
+
+var zag = document.createElement("input")
+    zag.type = "text"
+    div2.appendChild(zag)
+
+var but2 = document.createElement("button")
+    but2.innerText = "Добавить"
+    but2.onclick = function () { h.innerText = zag.value }
+    div2.appendChild(but2)
