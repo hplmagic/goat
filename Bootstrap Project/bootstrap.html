@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+</head>
+<body>
+<script src="bootstrap.js"></script>
+
+    
+<!-- Заголовок -->
+<header id="header" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <a id="logo" href="https://navi.gg"><img id="navi" src=images/navilogo.png></a>
+        <h1>Cделаем карантин интересным!</h1>
+    </div>
+</header>
+
+    
+<!-- Навигация по сайту -->   
+<nav id="nav" class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Навигация</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная страница</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Task.html">Задание</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="Map.html">Карта</a>
+          <a class="dropdown-item" href="Contact.html">Контакты</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Info.html">Информация</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+    
+<!-- Основная инфа -->
+<div id="main">
+<div id="home">
+    <h3 class="text-center">Try to create a table</h3>
+    <p>
+        Приветствую на своем великолепном сайте! Здесь можно создать таблицу (динамическую!!!). Чтобы это сделать, следует указать число строк и столбцов, после чего нажать кнопочку <b>Создать</b>. Далее будет переход на новую страницу с созданой таблицей и дополнительным функционалом.
+    </p>
+    <p>
+        ТЗ, по которому я делал эту таблицу, находится на странице <b>Task</b> (ее ты можешь найти в навигации сайта).
+    </p>
+<form id="forma">
+  <div class="form-group">
+    <label for="exampleInputRows1">Строки:</label>
+    <input id="countRows" type="text" class="form-control" placeholder="Введите количество строк">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputColumns1">Столбцы:</label>
+    <input id="countColumns" type="text" class="form-control" placeholder="Введите количество столбцов">
+  </div>
+  <button id="createTable" type="submit" class="btn btn-primary myactive">Создать</button>
+</form>
+</div>
+</div>
+    
+
+    
+    
+<footer id="footer" class="py-2 bg-dark text-white-50">
+  <div class="container text-center">
+      Valentin Naumenko
+      <br>
+      <a id="itmo" href="https://navi.gg">Университет ИТМО</a>
+      <br>
+      2020
+  </div>
+</footer>    
+</body>
+</html>
